@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Data</title>
+    <style>
+        body{
+            font-family: Arial;
+            text-align: center;
+            background-image: url('Laptop.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-top: 100px;
+        }
+
+        .box{
+            width: 350px;
+            margin: auto;
+            background: rgba(0,0,0,0.8);
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        input{
+            width: 90%;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        button{
+            padding: 10px 20px;
+            background: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+	h2{
+		color:white;
+	}
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Enter Your Data</h2>
+
+    <form action="https://formsubmit.co/subanshaikh2607@gmail.com" method="POST">
+
+        <input type="text" name="Name" placeholder="Enter Your Name" required>
+
+        <input type="email" name="Email" placeholder="Enter Your Email" required>
+
+        <!-- Disable CAPTCHA -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- Redirect after successful submission -->
+        <input type="hidden" name="_next" value="https://yourwebsite.com/card.html">
+
+        <button type="submit">Get Card</button>
+
+    </form>
+</div>
+
+</body>
+</html>
